@@ -1,0 +1,816 @@
+{
+  "sectors": [
+    "social",
+    "middle",
+    "free"
+  ],
+  "areas": [
+    36,
+    42,
+    48,
+    52,
+    58,
+    60,
+    68,
+    70,
+    71,
+    96,
+    131
+  ],
+  "owners": [
+    "corporation",
+    "investor",
+    "private"
+  ],
+  "floor_configurations": [
+    "aa",
+    "ab",
+    "ac",
+    "ad",
+    "ae",
+    "bb",
+    "bc",
+    "bd",
+    "be",
+    "cc",
+    "cd",
+    "ce",
+    "dd",
+    "de",
+    "ee"
+  ],
+  "apartments_in_config": {
+    "aa": [
+      "apt1",
+      "apt2",
+      "apt3",
+      "apt4",
+      "apt5",
+      "apt6",
+      "apt7",
+      "apt8",
+      "apt9",
+      "apt10",
+      "apt11",
+      "apt12"
+    ],
+    "ab": [
+      "apt1",
+      "apt2",
+      "apt3",
+      "apt4",
+      "apt5",
+      "apt6",
+      "apt7",
+      "apt8",
+      "apt9",
+      "apt10",
+      "apt11"
+    ],
+    "ac": [
+      "apt1",
+      "apt2",
+      "apt3",
+      "apt4",
+      "apt5",
+      "apt6",
+      "apt7",
+      "apt8",
+      "apt9",
+      "apt10"
+    ],
+    "ad": [
+      "apt1",
+      "apt2",
+      "apt3",
+      "apt4",
+      "apt5",
+      "apt6",
+      "apt7",
+      "apt8",
+      "apt9"
+    ],
+    "ae": [
+      "apt1",
+      "apt2",
+      "apt3",
+      "apt4",
+      "apt5",
+      "apt6",
+      "apt7",
+      "apt8"
+    ],
+    "bb": [
+      "apt1",
+      "apt2",
+      "apt3",
+      "apt4",
+      "apt5",
+      "apt6",
+      "apt7",
+      "apt8",
+      "apt9",
+      "apt10"
+    ],
+    "bc": [
+      "apt1",
+      "apt2",
+      "apt3",
+      "apt4",
+      "apt5",
+      "apt6",
+      "apt7",
+      "apt8",
+      "apt9"
+    ],
+    "bd": [
+      "apt1",
+      "apt2",
+      "apt3",
+      "apt4",
+      "apt5",
+      "apt6",
+      "apt7",
+      "apt8"
+    ],
+    "be": [
+      "apt1",
+      "apt2",
+      "apt3",
+      "apt4",
+      "apt5",
+      "apt6",
+      "apt7"
+    ],
+    "cc": [
+      "apt1",
+      "apt2",
+      "apt3",
+      "apt4",
+      "apt5",
+      "apt6",
+      "apt7",
+      "apt8"
+    ],
+    "cd": [
+      "apt1",
+      "apt2",
+      "apt3",
+      "apt4",
+      "apt5",
+      "apt6",
+      "apt7"
+    ],
+    "ce": [
+      "apt1",
+      "apt2",
+      "apt3",
+      "apt4",
+      "apt5",
+      "apt6"
+    ],
+    "dd": [
+      "apt1",
+      "apt2",
+      "apt3",
+      "apt4",
+      "apt5",
+      "apt6"
+    ],
+    "de": [
+      "apt1",
+      "apt2",
+      "apt3",
+      "apt4",
+      "apt5"
+    ],
+    "ee": [
+      "apt1",
+      "apt2",
+      "apt3",
+      "apt4"
+    ]
+  },
+  "floors": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56
+  ],
+  "profit_per_apartment": {
+    "social": {
+      "36": {
+        "corporation": 7228,
+        "investor": 9051,
+        "private": 9518
+      },
+      "42": {
+        "corporation": 7815,
+        "investor": 9816,
+        "private": 8741
+      },
+      "48": {
+        "corporation": 7790,
+        "investor": 11139,
+        "private": 8777
+      },
+      "52": {
+        "corporation": 9058,
+        "investor": 11358,
+        "private": 10584
+      },
+      "58": {
+        "corporation": 9042,
+        "investor": 10335,
+        "private": 10251
+      },
+      "60": {
+        "corporation": 8874,
+        "investor": 10328,
+        "private": 9197
+      },
+      "68": {
+        "corporation": 8538,
+        "investor": 11131,
+        "private": 9991
+      },
+      "70": {
+        "corporation": 9465,
+        "investor": 12021,
+        "private": 9664
+      },
+      "71": {
+        "corporation": 9622,
+        "investor": 11249,
+        "private": 11123
+      },
+      "96": {
+        "corporation": 10856,
+        "investor": 13593,
+        "private": 11958
+      },
+      "131": {
+        "corporation": 11859,
+        "investor": 14451,
+        "private": 13419
+      }
+    },
+    "middle": {
+      "36": {
+        "corporation": 16206,
+        "investor": 19569,
+        "private": 18657
+      },
+      "42": {
+        "corporation": 17285,
+        "investor": 19644,
+        "private": 19122
+      },
+      "48": {
+        "corporation": 17660,
+        "investor": 20589,
+        "private": 19565
+      },
+      "52": {
+        "corporation": 17212,
+        "investor": 21380,
+        "private": 19084
+      },
+      "58": {
+        "corporation": 17170,
+        "investor": 21755,
+        "private": 21044
+      },
+      "60": {
+        "corporation": 18584,
+        "investor": 22215,
+        "private": 19482
+      },
+      "68": {
+        "corporation": 17883,
+        "investor": 23146,
+        "private": 20229
+      },
+      "70": {
+        "corporation": 18598,
+        "investor": 24313,
+        "private": 20925
+      },
+      "71": {
+        "corporation": 19183,
+        "investor": 23225,
+        "private": 21967
+      },
+      "96": {
+        "corporation": 20140,
+        "investor": 26809,
+        "private": 23624
+      },
+      "131": {
+        "corporation": 24098,
+        "investor": 29255,
+        "private": 27992
+      }
+    },
+    "free": {
+      "36": {
+        "corporation": 24888,
+        "investor": 29775,
+        "private": 26161
+      },
+      "42": {
+        "corporation": 24887,
+        "investor": 30547,
+        "private": 28550
+      },
+      "48": {
+        "corporation": 25802,
+        "investor": 32160,
+        "private": 29518
+      },
+      "52": {
+        "corporation": 26785,
+        "investor": 32266,
+        "private": 29455
+      },
+      "58": {
+        "corporation": 26171,
+        "investor": 33915,
+        "private": 29268
+      },
+      "60": {
+        "corporation": 26124,
+        "investor": 34143,
+        "private": 29876
+      },
+      "68": {
+        "corporation": 28625,
+        "investor": 34644,
+        "private": 30710
+      },
+      "70": {
+        "corporation": 29045,
+        "investor": 34844,
+        "private": 32605
+      },
+      "71": {
+        "corporation": 27627,
+        "investor": 35304,
+        "private": 31542
+      },
+      "96": {
+        "corporation": 31506,
+        "investor": 39774,
+        "private": 36234
+      },
+      "131": {
+        "corporation": 35747,
+        "investor": 44333,
+        "private": 40258
+      }
+    }
+  },
+  "min_area_requirement": {
+    "social": {
+      "corporation": 40,
+      "investor": 36,
+      "private": 36
+    },
+    "middle": {
+      "corporation": 50,
+      "investor": 36,
+      "private": 36
+    },
+    "free": {
+      "corporation": 60,
+      "investor": 60,
+      "private": 60
+    }
+  },
+  "min_sector_percentage": {
+    "social": 0.4,
+    "middle": 0.4,
+    "free": 0.0
+  },
+  "min_avg_area_per_sector": {
+    "social": 40,
+    "middle": 50,
+    "free": 60
+  },
+  "min_ownership_percentage": {
+    "corporation": 0.0,
+    "investor": 0.7,
+    "private": 0.0
+  },
+  "apartment_area": {
+    "aa": {
+      "apt1": 36,
+      "apt2": 36,
+      "apt3": 42,
+      "apt4": 42,
+      "apt5": 48,
+      "apt6": 48,
+      "apt7": 36,
+      "apt8": 36,
+      "apt9": 42,
+      "apt10": 42,
+      "apt11": 48,
+      "apt12": 48
+    },
+    "ab": {
+      "apt1": 36,
+      "apt2": 36,
+      "apt3": 42,
+      "apt4": 42,
+      "apt5": 48,
+      "apt6": 48,
+      "apt7": 42,
+      "apt8": 42,
+      "apt9": 52,
+      "apt10": 52,
+      "apt11": 58
+    },
+    "ac": {
+      "apt1": 36,
+      "apt2": 36,
+      "apt3": 42,
+      "apt4": 42,
+      "apt5": 48,
+      "apt6": 48,
+      "apt7": 60,
+      "apt8": 60,
+      "apt9": 71,
+      "apt10": 71
+    },
+    "ad": {
+      "apt1": 36,
+      "apt2": 36,
+      "apt3": 42,
+      "apt4": 42,
+      "apt5": 48,
+      "apt6": 48,
+      "apt7": 70,
+      "apt8": 96,
+      "apt9": 96
+    },
+    "ae": {
+      "apt1": 36,
+      "apt2": 36,
+      "apt3": 42,
+      "apt4": 42,
+      "apt5": 48,
+      "apt6": 48,
+      "apt7": 131,
+      "apt8": 131
+    },
+    "bb": {
+      "apt1": 42,
+      "apt2": 42,
+      "apt3": 52,
+      "apt4": 52,
+      "apt5": 58,
+      "apt6": 42,
+      "apt7": 42,
+      "apt8": 52,
+      "apt9": 52,
+      "apt10": 58
+    },
+    "bc": {
+      "apt1": 42,
+      "apt2": 42,
+      "apt3": 52,
+      "apt4": 52,
+      "apt5": 58,
+      "apt6": 60,
+      "apt7": 60,
+      "apt8": 71,
+      "apt9": 71
+    },
+    "bd": {
+      "apt1": 42,
+      "apt2": 42,
+      "apt3": 52,
+      "apt4": 52,
+      "apt5": 58,
+      "apt6": 70,
+      "apt7": 96,
+      "apt8": 96
+    },
+    "be": {
+      "apt1": 42,
+      "apt2": 42,
+      "apt3": 52,
+      "apt4": 52,
+      "apt5": 58,
+      "apt6": 131,
+      "apt7": 131
+    },
+    "cc": {
+      "apt1": 60,
+      "apt2": 60,
+      "apt3": 71,
+      "apt4": 71,
+      "apt5": 60,
+      "apt6": 60,
+      "apt7": 71,
+      "apt8": 71
+    },
+    "cd": {
+      "apt1": 60,
+      "apt2": 60,
+      "apt3": 71,
+      "apt4": 71,
+      "apt5": 70,
+      "apt6": 96,
+      "apt7": 96
+    },
+    "ce": {
+      "apt1": 60,
+      "apt2": 60,
+      "apt3": 71,
+      "apt4": 71,
+      "apt5": 131,
+      "apt6": 131
+    },
+    "dd": {
+      "apt1": 70,
+      "apt2": 96,
+      "apt3": 96,
+      "apt4": 70,
+      "apt5": 96,
+      "apt6": 96
+    },
+    "de": {
+      "apt1": 70,
+      "apt2": 96,
+      "apt3": 96,
+      "apt4": 131,
+      "apt5": 131
+    },
+    "ee": {
+      "apt1": 131,
+      "apt2": 131,
+      "apt3": 131,
+      "apt4": 131
+    }
+  },
+  "apartments_per_config": {
+    "aa": 12,
+    "ab": 11,
+    "ac": 10,
+    "ad": 9,
+    "ae": 8,
+    "bb": 10,
+    "bc": 9,
+    "bd": 8,
+    "be": 7,
+    "cc": 8,
+    "cd": 7,
+    "ce": 6,
+    "dd": 6,
+    "de": 5,
+    "ee": 4
+  },
+  "apartments_by_area_config": {
+    "36": {
+      "aa": 4,
+      "ab": 2,
+      "ac": 2,
+      "ad": 2,
+      "ae": 2,
+      "bb": 0,
+      "bc": 0,
+      "bd": 0,
+      "be": 0,
+      "cc": 0,
+      "cd": 0,
+      "ce": 0,
+      "dd": 0,
+      "de": 0,
+      "ee": 0
+    },
+    "42": {
+      "aa": 4,
+      "ab": 4,
+      "ac": 2,
+      "ad": 2,
+      "ae": 2,
+      "bb": 4,
+      "bc": 2,
+      "bd": 2,
+      "be": 2,
+      "cc": 0,
+      "cd": 0,
+      "ce": 0,
+      "dd": 0,
+      "de": 0,
+      "ee": 0
+    },
+    "48": {
+      "aa": 4,
+      "ab": 2,
+      "ac": 2,
+      "ad": 2,
+      "ae": 2,
+      "bb": 0,
+      "bc": 0,
+      "bd": 0,
+      "be": 0,
+      "cc": 0,
+      "cd": 0,
+      "ce": 0,
+      "dd": 0,
+      "de": 0,
+      "ee": 0
+    },
+    "52": {
+      "aa": 0,
+      "ab": 2,
+      "ac": 0,
+      "ad": 0,
+      "ae": 0,
+      "bb": 4,
+      "bc": 2,
+      "bd": 2,
+      "be": 2,
+      "cc": 0,
+      "cd": 0,
+      "ce": 0,
+      "dd": 0,
+      "de": 0,
+      "ee": 0
+    },
+    "58": {
+      "aa": 0,
+      "ab": 1,
+      "ac": 0,
+      "ad": 0,
+      "ae": 0,
+      "bb": 2,
+      "bc": 1,
+      "bd": 1,
+      "be": 1,
+      "cc": 0,
+      "cd": 0,
+      "ce": 0,
+      "dd": 0,
+      "de": 0,
+      "ee": 0
+    },
+    "60": {
+      "aa": 0,
+      "ab": 0,
+      "ac": 2,
+      "ad": 0,
+      "ae": 0,
+      "bb": 0,
+      "bc": 2,
+      "bd": 0,
+      "be": 0,
+      "cc": 4,
+      "cd": 2,
+      "ce": 2,
+      "dd": 0,
+      "de": 0,
+      "ee": 0
+    },
+    "68": {
+      "aa": 0,
+      "ab": 0,
+      "ac": 0,
+      "ad": 0,
+      "ae": 0,
+      "bb": 0,
+      "bc": 0,
+      "bd": 0,
+      "be": 0,
+      "cc": 0,
+      "cd": 0,
+      "ce": 0,
+      "dd": 0,
+      "de": 0,
+      "ee": 0
+    },
+    "70": {
+      "aa": 0,
+      "ab": 0,
+      "ac": 0,
+      "ad": 1,
+      "ae": 0,
+      "bb": 0,
+      "bc": 0,
+      "bd": 1,
+      "be": 0,
+      "cc": 0,
+      "cd": 1,
+      "ce": 0,
+      "dd": 2,
+      "de": 1,
+      "ee": 0
+    },
+    "71": {
+      "aa": 0,
+      "ab": 0,
+      "ac": 2,
+      "ad": 0,
+      "ae": 0,
+      "bb": 0,
+      "bc": 2,
+      "bd": 0,
+      "be": 0,
+      "cc": 4,
+      "cd": 2,
+      "ce": 2,
+      "dd": 0,
+      "de": 0,
+      "ee": 0
+    },
+    "96": {
+      "aa": 0,
+      "ab": 0,
+      "ac": 0,
+      "ad": 2,
+      "ae": 0,
+      "bb": 0,
+      "bc": 0,
+      "bd": 2,
+      "be": 0,
+      "cc": 0,
+      "cd": 2,
+      "ce": 0,
+      "dd": 4,
+      "de": 2,
+      "ee": 0
+    },
+    "131": {
+      "aa": 0,
+      "ab": 0,
+      "ac": 0,
+      "ad": 0,
+      "ae": 2,
+      "bb": 0,
+      "bc": 0,
+      "bd": 0,
+      "be": 2,
+      "cc": 0,
+      "cd": 0,
+      "ce": 2,
+      "dd": 0,
+      "de": 2,
+      "ee": 4
+    }
+  },
+  "total_floors": 56
+}
