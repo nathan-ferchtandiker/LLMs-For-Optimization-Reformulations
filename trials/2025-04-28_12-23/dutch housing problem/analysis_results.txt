@@ -1,0 +1,43 @@
+===== REASONING =====
+The model assumes per-apartment and per-floor granularity where aggregation is possible. By relaxing assumptions about individual apartment tracking and floor distinctness, variables can be reduced significantly. Fixed variables are explicitly excluded to streamline the model. Structural changes like configuration-owner counts and area-sector aggregation maintain problem fidelity while improving computational tractability.
+
+===== ASSUMPTIONS =====
+1. Name: Individual Apartment Sector Assignment
+   Description: Each apartment's sector assignment is modeled with a separate binary variable (y_{kvhia}), requiring per-apartment tracking even when areas repeat within a floor configuration.
+   Breakable: Yes
+   Reasoning: Apartments with the same area in a configuration can be aggregated, as their sector assignments do not need individual tracking. This reduces variables by grouping identical apartments.
+
+2. Name: Per-Floor Indexed Variables
+   Description: Variables (x_{kvh}) are indexed by floor (k), assuming floors are distinct and require individual configuration assignments.
+   Breakable: Yes
+   Reasoning: Floors are interchangeable; the model can track counts of configurations instead of per-floor assignments, reducing the problem size.
+
+3. Name: Existence of Fixed Variables
+   Description: Variables like y_{kvh_{\text{corp}}i_{\text{free}}a} are fixed to 0 due to constraints (e.g., corporations cannot own free sector apartments).
+   Breakable: Yes
+   Reasoning: These variables can be pre-removed from the model to reduce complexity.
+
+4. Name: Redundant Linkage Constraints
+   Description: Constraints link x_{kvh} and y_{kvhia} explicitly (e.g., sum_i y_{kvhia} = x_{kvh}), requiring consistency checks.
+   Breakable: No
+   Reasoning: This linkage is necessary to ensure sector assignments align with floor ownership and configuration choices.
+
+
+===== RECOMMENDATIONS =====
+1. Assumption: Individual Apartment Sector Assignment
+   Name: Aggregate Apartments by Area-Sector
+   Description: Replace y_{kvhia} with aggregated counts of apartments by area, sector, and floor configuration-owner pair.
+   Reasoning: Reduces variables by grouping identical apartments in the same configuration, leveraging repeated areas in predefined floor designs.
+   Suggested Change: Define variables z_{vhi j} representing the number of apartments with area j in configuration v (owned by h) assigned to sector i. Multiply by the number of floors using (v,h) to compute totals.
+
+2. Assumption: Existence of Fixed Variables
+   Name: Remove Fixed Variables
+   Description: Delete variables y_{kvhia} that are fixed to 0 due to constraints (e.g., corporation in free sector).
+   Reasoning: Pre-processing can eliminate these variables, reducing model size.
+   Suggested Change: Exclude all y_{kvhia} where j_{v,a} < m_{ih} or h=corporation and i=free during variable initialization.
+
+3. Assumption: Per-Floor Indexed Variables
+   Name: Aggregate Floor Configurations
+   Description: Replace per-floor variables x_{kvh} with counts of floors per configuration-owner pair.
+   Reasoning: Floors are indistinguishable; tracking counts instead of individual floors reduces variables from O(K) to O(1).
+   Suggested Change: Define integer variables x_{vh} ∈ ℕ representing the number of floors using configuration v and owner h. Adjust constraints to use x_{vh} instead of x_{kvh}.

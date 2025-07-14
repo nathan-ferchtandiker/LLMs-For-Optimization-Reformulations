@@ -1,0 +1,54 @@
+===== REASONING =====
+The model assumes strict per-period constraints and individual block-level decisions, which are computationally expensive. By aggregating blocks into clusters, relaxing lower processing bounds, and allowing multi-period grade blending, the problem size can be reduced without sacrificing critical operational requirements. Safety-critical slope constraints and binary mining decisions must remain intact.
+
+===== ASSUMPTIONS =====
+1. Name: Individual Block Timing Necessity
+   Description: Each block's extraction period is modeled individually using binary variables.
+   Breakable: Yes
+   Reasoning: Groups of blocks with similar characteristics (e.g., spatial proximity, grade, precedence) can be aggregated into clusters, allowing group-level scheduling decisions without losing critical information. Individual block timing can be derived in post-processing.
+
+2. Name: Per-Period Grade Constraints
+   Description: Ore grade must be within bounds in each period individually.
+   Breakable: Yes
+   Reasoning: If stockpiling or blending across periods is allowed, grade constraints could be relaxed to apply over rolling multi-period averages, reducing the number of constraints.
+
+3. Name: Processing Capacity Lower Bounds
+   Description: Each period must process at least PC_min ore tonnage.
+   Breakable: Yes
+   Reasoning: Lower bounds may not be strictly necessary if temporary under-utilization of processing capacity is operationally acceptable (e.g., during maintenance or market downturns).
+
+4. Name: Binary Mining Decisions
+   Description: Each block must be fully mined in a single period or not mined at all.
+   Breakable: No
+   Reasoning: Partial mining of blocks is physically infeasible in open-pit operations due to block-based excavation methods.
+
+5. Name: Strict Slope Precedence
+   Description: All overlying blocks must be mined before a block can be extracted.
+   Breakable: No
+   Reasoning: Slope stability is a safety-critical constraint; relaxing precedence could lead to geotechnical failures.
+
+
+===== RECOMMENDATIONS =====
+1. Assumption: Individual Block Timing Necessity
+   Name: Aggregate Blocks into Clusters
+   Description: Group blocks into clusters based on spatial and operational similarities.
+   Reasoning: Reduces the number of variables by replacing per-block decisions with cluster-level decisions. Individual block extraction times can be inferred post-optimization.
+   Suggested Change: Define cluster-level binary variables y_j^t for cluster j in period t, with constraints adjusted to aggregate tonnage, grades, and precedence.
+
+2. Assumption: Processing Capacity Lower Bounds
+   Name: Relax Processing Capacity Lower Bounds
+   Description: Remove constraints enforcing minimum ore processing per period.
+   Reasoning: Eliminates potentially redundant constraints if temporary under-processing is permissible, simplifying the model.
+   Suggested Change: Omit the constraints ∑_{i=1}^n O_i x_i^t ≥ PC_min for all t.
+
+3. Assumption: Per-Period Grade Constraints
+   Name: Multi-Period Grade Blending
+   Description: Average grades over multiple periods instead of enforcing per-period bounds.
+   Reasoning: Reduces constraint count if stockpiling allows blending ore across periods, leveraging buffer storage to meet grade targets.
+   Suggested Change: Replace per-period grade constraints with rolling average constraints (e.g., ∑_{τ=t}^{t+Δ} ∑_{i=1}^n (g_i - G_{min/max}) O_i x_i^τ ≤/≥ 0).
+
+4. Assumption: Individual Block Timing Necessity
+   Name: Integer Relaxation for Clusters
+   Description: Use continuous variables for cluster extraction timing.
+   Reasoning: If clusters are large enough, fractional solutions for cluster timing can be post-processed into feasible integer schedules without affecting NPV significantly.
+   Suggested Change: Define y_j^t ∈ [0,1] for clusters j and periods t, then map fractional values to discrete periods post-optimization.
