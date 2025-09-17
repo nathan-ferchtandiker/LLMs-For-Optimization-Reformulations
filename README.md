@@ -23,26 +23,6 @@ This project helps you automatically create, analyze, and improve mathematical m
 
 ---
 
-## What is Optimization?
-
-Optimization is about finding the best solution to a problem from many possible options. For example, a company might want to deliver food to many locations as cheaply as possible, or a hospital might want to schedule staff so that everyone is covered but costs are minimized. These problems can be described with math, and computers can help solve them.
-
----
-
-## What Does This Project Do?
-
-- **Reads your problem description** (in plain English and math)
-- **Builds a mathematical model** for your problem
-- **Creates example data** for testing the model
-- **Solves the model using Gurobi** (a powerful optimization tool)
-- **Analyzes the model** to find assumptions and suggest improvements
-- **Automatically generates improved versions** of your model and tests them
-- **Compares different models** to see which one works best
-
-You don't need to be an expert in math or optimization to use this tool!
-
----
-
 ## How Are LLMs Used in This Project?
 
 Large Language Models (LLMs), such as those provided by OpenAI, are a core part of this tool's automation and intelligence. Here's how LLMs are used:
@@ -125,14 +105,3 @@ This integration of LLMs means you can go from a plain-language description to a
 - OpenAI API key (for model-building features)
 - Gurobi (with a valid license)
 - See `requirements.txt` for details
-
----
-
-## Notes
-
-- You don't need to know advanced math or programming to get started.
-- The tool will do most of the heavy lifting—just describe your problem clearly.
-- For more advanced use, you can look at the code in `src/pipeline/main.py` and the other folders.
-- If you get stuck, check the Gurobi and OpenAI documentation, or ask for help!
-
---- 
