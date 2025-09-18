@@ -10,13 +10,13 @@ The objective is to select up to `p` new hospital locations from a list of poten
 
 An inefficient formulation for this problem is shown below:
 
-![Inefficient Model](images/inefficient_model.png.png)
+![Inefficient Model](images/inefficient_model.png)
 
 In this formulation, an implicit assumption is that it matters which specific hospital a household is assigned to. For instance, the model assumes it is important to distinguish whether a household is assigned to hospital 1 or hospital 2.
 
 A more efficient formulation can be derived by relaxing this assumption. The improved formulation is shown below:
 
-![Efficient Model](images/efficient_model.png.png)
+![Efficient Model](images/efficient_model.png)
 
 ---
 
@@ -24,13 +24,13 @@ A more efficient formulation can be derived by relaxing this assumption. The imp
 
 ### Stage 1: Standardization and Data Generation
 
-![Stage 1](Stage1.png)
+![Stage 1](images/Stage1.png)
 
 In the first stage, the tool processes a problem description in natural language, an optimization model in LaTeX, and the associated data. The LLM standardizes the optimization model by creating a canonical version of the formulation. Additionally, it generates a synthetic data generator—a Python script that samples smaller-scale data to mimic the original problem's dataset. These smaller datasets are used in the second stage to validate model equivalence.
 
 ### Stage 2: Generating and Evaluating Alternative Formulations
 
-![Stage 2](Stage2.png)
+![Stage 2](images/Stage2.png)
 
 In the second stage, the tool generates multiple candidate formulations and evaluates their performance and equivalence to the original model. The LLM extracts the modeling assumptions from the original formulation and determines whether each assumption is necessary based on the problem context. These assumptions form the basis for creating new canonical formulations. Finally, the tool applies rigorous checks to ensure the new formulations are both faster and equivalent to the original model.
 
